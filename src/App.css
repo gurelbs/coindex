@@ -1,0 +1,79 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: calc(.4rem + 1vw);
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.bold{
+  font-weight: bold;
+}
+table tr{
+  color: #333;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  text-transform: uppercase;
+}
+
+table tr:hover{
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+table td:first-child {
+  overflow: auto;
+  margin: 0;
+  min-width: 100px;
+  max-width: calc(8rem + 8vw);
+}
+table td:first-child::-webkit-scrollbar {
+  width: .1rem;
+  height: .5vw;
+}
+
+table td:first-child::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+table td:first-child::-webkit-scrollbar-thumb {
+background-color: darkgrey;
+outline: 1px solid slategrey;
+}
+table td img {
+  width: calc(1rem + 4vw);
+  height: calc(1rem + 4vw);
+  margin: auto 0;
+}
+.coin-name-div{
+  display: flex;
+}
+.coin-name-div h5 {
+  font-size: calc(.5rem + 1vw);
+}
+.coin-name-div,.coin-name-div p {
+  padding: .25vw 1vw;
+}
+.coin-name-div p span {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: .25vw 1vw;
+  border-radius: .5vw;
+  font-size: calc(.5rem + .8vw);
+
+}
+.coin-name-div p span:first-child{
+  background-color: #333;
+  color: #eee;
+}
+@keyframes anima {
+  from {
+    font-size: 3vw;
+    opacity: 1;
+  }
+  to {
+    transform: scale(3);    
+    opacity: 0;
+  }
+}
