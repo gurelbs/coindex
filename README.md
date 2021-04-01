@@ -42,8 +42,9 @@
 ## uniq feature:
 - [ ] news per currency in his uniq page
 - [ ] price history and full statistics 
-- [ ] price live chart
+- [ ] live price chart
 
 ## nice to have
 - [ ] show price pair option (BTC/USD, BTC/ILS...)
- 
+- [ ] dark mode
+- [ ] sign in with google

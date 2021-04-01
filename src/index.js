@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import CryptoApp from './CryptoApp';
+import Coindex from './Coindex';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CryptoApp />
+    <Coindex />
   </React.StrictMode>,
   document.getElementById('root')
 );
