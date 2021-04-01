@@ -11,16 +11,16 @@
 
 ## main feature:
 > pages:
-    - [ ] dynamic page for all CryptoCurrency.
-    - [ ] page for top 100 CryptoCurrency.
-    - [ ] uniq page for each currency
-    - [ ] news page
-    - [ ] about page
+- [ ] dynamic page for all CryptoCurrency.
+- [ ] page for top 100 CryptoCurrency.
+- [ ] uniq page for each currency
+- [ ] news page
+- [ ] about page
 > more features:
-    - [ ] search box
-    - [ ] table sort buttons
-    - [ ] global market data
-    
+- [ ] search box
+- [ ] table sort buttons
+- [ ] global market data
+
 ## uniq feature:
 - [ ] news per currency in his uniq page
 - [ ] price history and full statistics 
