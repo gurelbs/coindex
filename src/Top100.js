@@ -14,8 +14,7 @@ export default class Top100 extends Component {
     return this.state.data !== [] ? clearInterval(this.interval) : null
   }
   saveCoinData = async () => {
-    let res = await CoinGeckoClient.coins.markets()
-    let data = res.data
+    let {data} = await CoinGeckoClient.coins.markets()
     return this.setState({data: data})
   }
   render(){
