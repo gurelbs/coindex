@@ -1,6 +1,6 @@
-# **[coindex](https://gurelbs.github.io/coindex/)** - CryptoCurrency Index Web App
+# **[Coindex](https://gurelbs.github.io/coindex/)** - CryptoCurrency Index Web App
 
-## pseudocode:
+## Pseudo Code:
 - [ ] homepage - cover
 - [ ] nav
     - [ ] logo
@@ -32,6 +32,7 @@
 - [ ] uniq page for each currency
 - [ ] news page
 - [ ] about page
+
 > more features:
 - [ ] search box
 - [ ] table sort buttons
