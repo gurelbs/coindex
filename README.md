@@ -10,8 +10,8 @@
     - [ ] about
 
 ## main feature:
-- [ ] dynamic page for all CryptoCurrency.
-- [ ] page for top 100 CryptoCurrency.
-- [ ] uniq page for each currency
-- [ ] news page
-    - [ ] news per currency in his uniq page
+- [ ] 1. dynamic page for all CryptoCurrency.
+- [ ] 2. page for top 100 CryptoCurrency.
+- [ ] 3. uniq page for each currency
+- [ ] 4. news page
+    - [ ] 4.1. news per currency in his uniq page
