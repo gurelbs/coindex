@@ -1,6 +1,6 @@
 {
   "name": "coindex",
-  "homepage": "https://gurelbs.github.io/coindex/",
+  "homepage": "http://gurelbs.github.io/coindex/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
