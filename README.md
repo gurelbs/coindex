@@ -8,6 +8,22 @@
     - [ ] all coin
     - [ ] news
     - [ ] about
+- [ ] mainApp
+    - [ ] top100 page
+        - [ ] top100 table
+            - [ ] table sort buttuns
+            - [ ] coin link onClick to coin uniq page 
+    - [ ] all coin page
+        - [ ] all coin table
+            - [ ] table sort buttuns
+            - [ ] infinite scroll 
+            - [ ] coin link onClick to coin uniq page 
+    - [ ] uniq coin page
+        - [ ] price
+        - [ ] rank
+        - [ ] statistics
+        - [ ] live chart
+        - [ ] coin news
 
 ## main feature:
 > pages:
@@ -25,3 +41,7 @@
 - [ ] news per currency in his uniq page
 - [ ] price history and full statistics 
 - [ ] price live chart
+
+## nice to have
+- [ ] show price pair option (BTC/USD, BTC/ILS...)
+ 
