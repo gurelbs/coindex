@@ -1,4 +1,5 @@
 # **Coindex** - CryptoCurrency Index Web App
+> [homepage] (https://gurelbs.github.io/coindex/)
 
 ## pseudocode:
 - [ ] homepage - cover
