@@ -1,5 +1,5 @@
 # **[Coindex](https://gurelbs.github.io/coindex/)** - CryptoCurrency Index Web App
-# **[coindex.cf](http://coindex.cf)**
+# website: [COINDEX.CF](http://coindex.cf)
 
 ## Pseudo Code:
 - [ ] homepage - cover
