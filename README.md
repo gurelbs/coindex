@@ -7,6 +7,8 @@
     - [ ] logo
     - [ ] top100
     - [ ] all coin
+    - [ ] all Exchanges
+    - [ ] Watchlist
     - [ ] news
     - [ ] about
 - [ ] mainApp

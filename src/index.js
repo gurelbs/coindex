@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Coindex from './Coindex';
+import Coindex from './components/Coindex';
 
 ReactDOM.render(
   <React.StrictMode>
