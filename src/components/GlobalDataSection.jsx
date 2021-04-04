@@ -1,28 +1,24 @@
-import React from 'react'
 import CountUp from 'react-countup';
 
 export default function GlobalDataSection({cryptocurrencies,marketCap,exchanges}) {
     return (
         <section className="global-data-section">
                     <div className="details-num-card">
-                        <h1><CountUp end={cryptocurrencies || ''}/></h1>
+                        <h1><CountUp end={cryptocurrencies || 0}/></h1>
                         <h2>Cryptocurrencies</h2>
                     </div>
                     <div className="details-num-card">
-                        <h1>$
-                            <CountUp
-                                className='' 
-                                separator=","
-                                decimals={3}
-                                decimal=","
-                                duration={2}
-                                end={marketCap || ''}
-                            /></h1>
-                        <h2>MarketCap</h2>
+                        <h1>$<CountUp
+                                start={0}
+                                decimals={0}
+                                separator={'.'}
+                                end={Math.round(marketCap / 1000000000) || 0}
+                            />T</h1>
+                        <h2>Global Market Cap</h2> 
                     </div>
                     <div className="details-num-card">
                         <h1>
-                            <CountUp end={exchanges || ''}/>
+                            <CountUp end={exchanges || 0}/>
                         </h1>
                         <h2>Exchanges</h2>
                     </div>

@@ -1,6 +1,5 @@
 .homepage{
     position: relative;
-    height: 90vh;
 }
 .global-data-section{
     display: flex;
@@ -15,10 +14,11 @@
 .details-num-card{
     padding: 1vw;
 }
-.details-num-card h1,.details-num-card h1 span {
-    font-size: 2rem;
-    color: #333;
-}
-.details-num-card h1 {
+.details-num-card h1{
+    font-size: 1.65rem;
     color: rgb(37, 173, 37);
+}
+.details-num-card h1 span{
+    font-size: 1.5rem;
+    color: #333;
 }

@@ -12,11 +12,11 @@
 }
 .container{
   min-height: 100vh;
-  overflow-y: hidden;
 }
 .page{
   position: absolute;
-  height: 100%;
+  overflow: hidden;
+  height: 90%;
   width: 100%;
 }
 .page-enter {
@@ -31,11 +31,12 @@
 }
 
 .page-exit {
+  transform: scale(1) translateX(0%);
   opacity: 1;
 }
 
 .page-exit-active {
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
-  transform: translateX(10%);
+  transform: translateX(-10%);
 }

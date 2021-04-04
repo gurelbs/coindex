@@ -1,0 +1,80 @@
+.table-wrap{
+    overflow-y: scroll;
+    overflow-x: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 70vh;
+    width: 80%;
+}
+/* table */
+.top100-table{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+  }
+.top100-table img {
+    width: auto;
+    max-height: 2rem;
+    max-width: 2rem;
+    height: 100%;
+    margin: auto .5vw auto 0 ;
+}
+  table .tr-wrap{
+    color: #333;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    text-transform: uppercase;
+  }
+  table .tr-wrap:hover{
+    background: #eee;
+  }
+  .top100-table .coin-name-td{
+    min-width: 100px;
+    width: 200px;
+    max-width: calc(1rem + 1vw);
+    position: relative;
+    height: 5vh;
+    padding: 0 1vw;
+    background: #eee;
+  }
+
+  .top100-table a {
+    cursor: pointer;
+    text-decoration: 0;
+    color: #333;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: .25vw;
+  }
+  .card-flex{
+    display: flex;
+    width: 100%;
+    position: a;
+  }
+  .coin-mini-details{
+    display: flex;
+  }
+  .coin-mini-details p {
+    margin: 0 .1vw;
+    font-size: 1.5vw;
+  }
+  .card-flex h5{
+    font-size: 1vw;
+  }
+  .card-name{
+    flex-direction: column;
+  }
+  .top100-table .rank{
+    padding: .25vw .5vw;
+    border-radius: .25vw;
+    font-size: calc(.5rem + .5vw);
+    background-color: #333;
+    position: relative;
+    top: 0;
+    color: #eee;
+  }

@@ -1,6 +1,8 @@
 import React from 'react'
-import './top100.css'
-export default function Top100Table({data}) {
+import {Link } from "react-router-dom";
+
+import './table.css'
+export default function Table({data}) {
     const formated = x => new Intl.NumberFormat('en-US', { 
         style: 'currency', 
         currency: 'USD',
@@ -12,30 +14,32 @@ export default function Top100Table({data}) {
         <table className="top100-table">
           <thead>
             <tr>
-            <th>name</th>
-            <th>price</th>
-            <th>market cap</th>
-            <th>change 24h</th>
-            <th>high 24h</th>
-            <th>low 24h</th>
+              <th>name</th>
+              <th>price</th>
+              <th>market cap</th>
+              <th>change 24h</th>
+              <th>high 24h</th>
+              <th>low 24h</th>
             </tr>
           </thead>
           <tbody>
           {
             data.map((coin,i) => {
             return (
-              <tr key={i} className='tr-wrap'>
+              <tr className='tr-wrap' key={i}>
                   <td className='coin-name-td'>
-                    <div className='coin-name-div'>
-                      <img src={coin.image} alt={`${coin.name}-icon`}></img>
-                      <div>
-                        <h5>{coin.name}</h5>
-                        <p>
-                          <span>{coin.market_cap_rank}</span>
-                          <span>{coin.symbol}</span>
-                        </p>
-                      </div>
+                <Link to={`/cryptocurrencies/${coin.id}`}>
+                    <div className="card-flex">
+                        <img src={coin.image} alt={`${coin.name}-icon img`}></img>
+                        <div className="coin-name">
+                          <h5>{coin.name}</h5>
+                          <div className="coin-mini-details">
+                            <p className="rank">{coin.market_cap_rank}</p>
+                            <p className="symbol-name">{coin.symbol}</p>
+                          </div>
+                        </div>
                     </div>
+                  </Link>
                   </td>
                   <td
                   className="bold"

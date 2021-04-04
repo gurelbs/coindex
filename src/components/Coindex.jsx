@@ -7,12 +7,16 @@ import Watchlist from './Watchlist'
 import Exchanges from './Exchanges'
 import About from './About'
 import News from './News'
-import { CSSTransition} from "react-transition-group";
+import NotFound from './NotFound'
+import CoinCard from './CoinCard'
+
+import { CSSTransition,TransitionGroup} from "react-transition-group";
 // router
-import {BrowserRouter as Router, Route, } from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
 export default function Coindex() {
     const routes = [
         { path: '/cryptocurrencies', name: 'Cryptocurrencies', Component: Cryptocurrencies },
+        { path: '/cryptocurrencies/:id', name: 'Cryptocurrencies', Component: CoinCard },
         { path: '/exchanges', name: 'Exchanges', Component: Exchanges },
         { path: '/watchlist', name: 'Watchlist', Component: Watchlist },
         { path: '/news', name: 'News', Component: News },
@@ -23,24 +27,24 @@ export default function Coindex() {
         <div className='container'>
         <Router>
             <Navbar />
-            <Route path='/' exact Component={HomePage} />
-            {routes.map(({path, Component}) => (
-                <Route exact key={path} path={path}>
-                {({ match }) => (
-                    <CSSTransition
-                        in={match !== null}
-                        timeout={200}
-                        classNames='page'
-                        unmountOnExit 
-                    >
-                        <div className='page'>
-                            <Component/>
-                        </div>
-                    </CSSTransition>
-                )}
-                </Route>
-            ))}
-        </Router>
+                <Route render={({location}) => {
+                    return (<TransitionGroup>
+                        <CSSTransition
+                            key={location.key}
+                            timeout={200}
+                            classNames='page'
+                            unmountOnExit 
+                        >
+                            <Switch location={location}>
+                                {routes.map(({path, Component}) => {
+                                    return <Route exact path={path} component={Component}/>
+                                })}
+                                <Route component={NotFound}/>
+                            </Switch>
+                        </CSSTransition> 
+                    </TransitionGroup>)
+                }}/>
+            </Router>
         </div>
     );
 }
