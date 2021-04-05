@@ -11,9 +11,10 @@ export default function GlobalDataSection({cryptocurrencies,marketCap,exchanges}
                         <h1>$<CountUp
                                 start={0}
                                 decimals={0}
-                                separator={'.'}
-                                end={Math.round(marketCap / 1000000000) || 0}
-                            />T</h1>
+                                separator={','}
+                                // end={Math.round(marketCap / 1000000000) || 0}
+                                end={marketCap || 0}
+                            /></h1>
                         <h2>Global Market Cap</h2> 
                     </div>
                     <div className="details-num-card">

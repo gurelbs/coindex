@@ -61,8 +61,8 @@ export default function Cryptocurrencies() {
       }).format(x)
     return (
         <div className="page">
-            <div className="table-wrap">
-        <table className="top100-table">
+            <div className="table-fluid">
+        <table className="table">
           <thead>
             <tr>
               <th>name</th>

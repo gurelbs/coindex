@@ -1,80 +1,103 @@
+::-webkit-scrollbar {
+  width: .25em;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
 .table-wrap{
-    overflow-y: scroll;
-    overflow-x: auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    height: 70vh;
-    width: 80%;
+  overflow-y: scroll;
+  overflow-x: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.table-fluid{
+  max-height: 100vh;
+  overflow: scroll;
+  overflow-x: auto;
 }
 /* table */
-.top100-table{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    border-collapse: collapse;
-  }
-.top100-table img {
-    width: auto;
-    max-height: 2rem;
-    max-width: 2rem;
-    height: 100%;
-    margin: auto .5vw auto 0 ;
+.table{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
-  table .tr-wrap{
-    color: #333;
-    border-bottom: 1px solid rgb(216, 216, 216);
-    text-transform: uppercase;
-  }
-  table .tr-wrap:hover{
-    background: #eee;
-  }
-  .top100-table .coin-name-td{
-    min-width: 100px;
-    width: 200px;
-    max-width: calc(1rem + 1vw);
-    position: relative;
-    height: 5vh;
-    padding: 0 1vw;
-    background: #eee;
-  }
+.table th {
+text-transform: uppercase;
+position: sticky;
+text-align: left;
+background: rgba(154, 168, 172, 0.9);
+padding: 1vw;
+top: 0;
+}
+.table img {
+  width: auto;
+  max-height: 2rem;
+  max-width: 2rem;
+  height: 100%;
+  margin: auto .5vw auto 0 ;
+}
+table .tr-wrap{
+  color: #333;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  text-transform: uppercase;
+}
+table .tr-wrap:hover{
+  background: #eee;
+}
+.table .coin-name-td{
+  min-width: 100px;
+  width: 200px;
+  max-width: calc(1rem + 1vw);
+  position: relative;
+  height: 5vh;
+  padding: 0 1vw;
+  background: #eee;
+}
 
-  .top100-table a {
-    cursor: pointer;
-    text-decoration: 0;
-    color: #333;
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    margin: .25vw;
-  }
-  .card-flex{
-    display: flex;
-    width: 100%;
-    position: a;
-  }
-  .coin-mini-details{
-    display: flex;
-  }
-  .coin-mini-details p {
-    margin: 0 .1vw;
-    font-size: 1.5vw;
-  }
-  .card-flex h5{
-    font-size: 1vw;
-  }
-  .card-name{
-    flex-direction: column;
-  }
-  .top100-table .rank{
-    padding: .25vw .5vw;
-    border-radius: .25vw;
-    font-size: calc(.5rem + .5vw);
-    background-color: #333;
-    position: relative;
-    top: 0;
-    color: #eee;
-  }
+.table a {
+  cursor: pointer;
+  text-decoration: 0;
+  color: #333;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  margin: .25vw;
+}
+.card-flex{
+  display: flex;
+  width: 100%;
+  position: a;
+}
+.coin-mini-details{
+  display: flex;
+}
+.coin-mini-details p {
+  margin: 0 .1vw;
+  font-size: 1.5vw;
+}
+.card-flex h5{
+  font-size: 1vw;
+}
+.card-name{
+  flex-direction: column;
+}
+.table .rank{
+  padding: .25vw .5vw;
+  border-radius: .25vw;
+  font-size: calc(.5rem + .5vw);
+  background-color: #333;
+  position: relative;
+  top: 0;
+  color: #eee;
+}

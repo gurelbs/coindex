@@ -1,0 +1,94 @@
+.card {
+    position: relative;
+    height: auto;
+}
+.card-cover{
+    min-height: 100%;
+    display: flex;
+    width: 90%;
+    margin: 1vw auto;
+    justify-content: space-between;
+}
+.data-basic,.data-price-wrap{
+    display: flex;
+    padding: 0 .5vw;
+    place-items: center;
+    flex-direction: column;
+}
+.data-price .data-price-txt,.data-price-symbol{
+    font-size: 1.2vw;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.data-price-wrap .data-price{
+    font-size: 5vw;
+}
+.data-price-symbol{
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    margin: .2vw;
+}
+.data-basic-details{
+    display: flex;
+}
+.data-basic .coin-name{
+    font-size: 5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.data-basic .coin-symbol{
+    background: #eee;
+    display: flex;
+    padding: 0;
+    height: auto;
+    padding: .1vw .3vw;
+    text-transform: uppercase;
+    font-size: 1vw;
+    border-radius: .3vw;
+    margin: auto .5vw;
+    justify-content: center;
+}
+.coin-symbol-img{
+    width: auto;
+    height: 100%;
+    max-height: 3rem;
+    margin: .25vw;
+}
+.cards-details-btns{
+    display: flex;
+    width: 100%;
+}
+.data-basic-rank,.cards-details-btns .data-basic-link,.data-price-change{
+    background: #eee;
+    text-transform: capitalize;
+    font-size: 1.2vw;
+    font-weight: bold;
+    padding: .1vw .3vw;
+    border-radius: .3vw;
+    margin: .1vw;
+    text-decoration: 0;
+    position: relative;
+}
+.coin-description{
+    width: 65%;
+    padding: 2vw;
+}
+.coin-description p {
+    font-weight: lighter;
+    font-size: 1.4vw;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+.coin-description a {
+    font-size: 1.4vw;
+    text-decoration: 0;
+}
+.data-price-change{
+    display: flex;
+    margin: 0 auto;
+    place-items: center;
+    justify-content:center ;
+}
+.data-price-change span{
+    margin: auto .25vw;
+    height: .5rem;
+}

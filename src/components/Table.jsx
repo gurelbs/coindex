@@ -10,8 +10,8 @@ export default function Table({data}) {
         maximumFractionDigits: 2
       }).format(x)
     return (
-      <div className="table-wrap">
-        <table className="top100-table">
+      <div>
+        <table className="table">
           <thead>
             <tr>
               <th>name</th>

@@ -45,15 +45,14 @@ export default function HomePage() {
         <div className="page homepage">
             <div>
                 {isFetch ? <Spinner/> :
+                <>
                 <GlobalDataSection 
                     cryptocurrencies={cryptocurrencies}
                     marketCap={marketCap}
                     exchanges={exchanges}
-                />}
-                {
-                    isFetch ? <Spinner/> :
-                    <Table
-                        data={topCoin}/>
+                />
+                <Table data={topCoin}/>
+                </>
                 }
             </div>
         </div>
