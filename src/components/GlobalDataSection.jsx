@@ -4,7 +4,7 @@ export default function GlobalDataSection({cryptocurrencies,marketCap,exchanges}
     return (
         <section className="global-data-section">
                     <div className="details-num-card">
-                        <h1><CountUp end={cryptocurrencies || 0}/></h1>
+                        <h1><CountUp end={cryptocurrencies || ''}/></h1>
                         <h2>Cryptocurrencies</h2>
                     </div>
                     <div className="details-num-card">
@@ -13,13 +13,13 @@ export default function GlobalDataSection({cryptocurrencies,marketCap,exchanges}
                                 decimals={0}
                                 separator={','}
                                 // end={Math.round(marketCap / 1000000000) || 0}
-                                end={marketCap || 0}
+                                end={marketCap || ''}
                             /></h1>
                         <h2>Global Market Cap</h2> 
                     </div>
                     <div className="details-num-card">
                         <h1>
-                            <CountUp end={exchanges || 0}/>
+                            <CountUp end={exchanges || ''}/>
                         </h1>
                         <h2>Exchanges</h2>
                     </div>

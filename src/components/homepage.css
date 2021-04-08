@@ -1,6 +1,14 @@
 .homepage{
     position: relative;
 }
+.top-100-txt{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem;
+    font-weight: lighter;
+    font-size: 2vw;
+    color: #333;
+}
 .global-data-section{
     display: flex;
     justify-content: space-evenly;

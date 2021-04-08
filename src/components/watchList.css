@@ -1,0 +1,42 @@
+.run-line{
+    width: 100vw;
+}
+.txt-nothing-msg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+}
+.txt-nothing-msg h1,.txt-nothing-msg p {
+    font-size: 5vw;
+    color: rgb(173, 173, 173);
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.txt-nothing-msg p {
+    font-size: 1.5vw;
+    width: 50%;
+    text-align: center;
+    margin: 1.5vw 0;
+}
+.txt-nothing-msg a {
+    font-size: 2vw;
+    text-transform: uppercase;
+    text-decoration: 0;
+    background: rgb(87, 87, 87);
+    color: white;
+    padding: 1vw;
+    border-radius: .5vw;
+    transition: .2s ease-in-out;
+    border: 0;
+    outline: 0;
+}
+.txt-nothing-msg a:hover {
+    background: rgba(87, 87, 87, 0.89);
+}
+.txt-nothing-msg a:active {
+    transform: scale(.96);
+}

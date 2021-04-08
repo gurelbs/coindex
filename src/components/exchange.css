@@ -1,0 +1,128 @@
+.exchange-card{
+    display: flex;
+    justify-content: space-between;
+    margin: 1vw;
+}
+.exchange-card-flexdiv{
+    display: flex;
+    flex-direction: row-reverse;
+    place-items: center;
+    justify-content: space-between;
+}
+.exchange-card-flexdiv h1 {
+    font-size: 4vw;
+}
+.exchange-card-flexdiv img {
+    max-height: 2.5vw;
+}
+.exchange-card-prices {
+    text-align: center;
+}
+.exchange-card-prices .usd-price {
+    font-size: 3vw;
+    color: #333;
+    font-weight: lighter;
+}
+.exchange-card-prices .btc-price {
+    font-size: 1.5vw;
+    color: #333;
+    font-weight: bold;
+}
+.exchanges-links-wrap{
+    width: 100%;
+    display: flex;
+    margin: 1vw;
+}
+.exchanges-links-wrap > p {
+    margin: 0 .5vw;
+    text-transform: capitalize;
+}
+.exchanges-links-wrap .score-bg {
+    background-color: white;
+    color: #333;
+    font-size: 1vw;
+    padding: 0 .2vw;
+    border-radius: .2vw;
+    font-weight: bold;
+}
+.exchanges-links-wrap .exchanges-links a,.tag{
+    text-decoration: 0;
+    color: white;
+    background: #333;
+    border-radius: .3vw;
+    font-size: 1vw;
+    font-size: 1vw;
+    padding: .25vw .5vw;
+}
+.exchanges-links-wrap .exchanges-links a i{
+    font-size: 1vw;
+    margin: auto .5vw;
+}
+.exchanges-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.exchanges-table a {
+    font-size: 1.1vw;
+    text-decoration: 0;
+    text-transform: uppercase;
+}
+.exchanges-table th{
+    background: rgba(154, 168, 172, 0.9);
+    text-transform: uppercase;
+    font-size: 1.2vw;
+}
+.flex-th-price,.flex-th{
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex-th-price td{
+    font-size: 1.2vw;
+    background: rgba(226, 225, 225, 0.5);
+    background: rgba(226, 225, 225, 0.5);
+    border-left: 1px solid #333;
+    width: 100%;
+}
+.flex-th-price td:nth-child(1){
+    border-left: 0;
+    background: 0;
+    background-image:linear-gradient(to right, transparent, rgba(226, 225, 225, 0.5))
+}
+.flex-th-price td:nth-child(3){
+    background: 0;
+    background-image:linear-gradient(to left, transparent, rgba(226, 225, 225, 0.5))
+}
+.flex-th-price td:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+.exchanges-table tr{
+    border-bottom: 1px solid black;
+}
+.exchanges-table tr:hover{
+    background-color: rgba(230, 230, 230, 0.418);
+}
+.exchanges-table td {
+    padding: .25vw .5vw .25vw 1vw;
+    font-size: 1.1vw;
+}
+.exchanges-table td:nth-child(5),
+.exchanges-table td:nth-child(6),
+.exchanges-table td:nth-child(7) {
+    background: #eee;
+}
+.exchanges-table td:nth-child(8),
+.exchanges-table td:nth-child(9),
+.exchanges-table td:nth-child(10) {
+    background: rgb(228, 228, 228);
+}
+.flex-td{
+    display: flex;
+    justify-content: left;
+    width: 20vw;
+}
+.exchange-img{
+    margin: 0 .25vw;
+}
+/* .left-price,.right-price{
+} */

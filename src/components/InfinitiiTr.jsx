@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link } from "react-router-dom";
 
-export default function InfinitiiTr(coin) {
+export default function InfinitiiTr({coin}) {
     const formated = x => new Intl.NumberFormat('en-US', { 
         style: 'currency', 
         currency: 'USD',

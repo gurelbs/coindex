@@ -40,3 +40,24 @@
   transition: opacity 300ms, transform 300ms;
   transform: translateX(-10%);
 }
+.about-page{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  place-items: center;
+  position: absolute;
+}
+.about-page h1 {
+  font-size: 4rem;
+}
+.about-page p {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 600px){
+  *{
+    font-size: 20px;
+  }
+}

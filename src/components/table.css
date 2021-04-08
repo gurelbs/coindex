@@ -8,16 +8,17 @@
   background-color: darkgrey;
   outline: 1px solid slategrey;
 }
+
 .table-wrap{
   overflow-y: scroll;
   overflow-x: auto;
   position: relative;
-  display: flex;
+  display: flex;  
   justify-content: center;
   margin: 0 auto;
 }
-.table-fluid{
-  max-height: 100vh;
+.fluid-table{
+  height: 90vh;
   overflow: scroll;
   overflow-x: auto;
 }
@@ -34,10 +35,21 @@
 text-transform: uppercase;
 position: sticky;
 text-align: left;
-background: rgba(154, 168, 172, 0.9);
+background: rgba(216, 230, 235, 0.95);
+color: #333;
 padding: 1vw;
 top: 0;
 }
+.table td {
+  padding: 0 0 0 1vw;
+}
+.fa-star{
+  color: gold;
+}
+.fa-star:active{
+  animation: star .3s ease-in-out ;
+}
+@keyframes star {100% { transform: scale(1.1) rotate(360deg);}}
 .table img {
   width: auto;
   max-height: 2rem;

@@ -1,8 +1,11 @@
-import React from 'react'
+import React,{useState,useEffect,useRef} from 'react'
 import {Link } from "react-router-dom";
 
 import './table.css'
-export default function Table({data}) {
+export default function Table({data,handleAddToWatchList}) {
+  const [watchListBtn, setWatchListBtn] = useState(false)
+  const [watchListData, setWatchListData] = useState([])
+  const watchListRef = useRef()
     const formated = x => new Intl.NumberFormat('en-US', { 
         style: 'currency', 
         currency: 'USD',
@@ -10,11 +13,12 @@ export default function Table({data}) {
         maximumFractionDigits: 2
       }).format(x)
     return (
-      <div>
+      <div className="fluid-table">
         <table className="table">
           <thead>
             <tr>
               <th>name</th>
+              <th>watch list</th>
               <th>price</th>
               <th>market cap</th>
               <th>change 24h</th>
@@ -26,7 +30,7 @@ export default function Table({data}) {
           {
             data.map((coin,i) => {
             return (
-              <tr className='tr-wrap' key={i}>
+              <tr className='tr-wrap' key={i} onClick={() => handleAddToWatchList(coin)}>
                   <td className='coin-name-td'>
                 <Link to={`/cryptocurrencies/${coin.id}`}>
                     <div className="card-flex">
@@ -41,6 +45,10 @@ export default function Table({data}) {
                     </div>
                   </Link>
                   </td>
+                  <td>
+                    <i ref={watchListRef}
+                      className={`${coin.watchList ? 'fas' : 'far'} fa-star`}></i>
+                    </td>
                   <td
                   className="bold"
                   style={{color: coin.market_cap_change_percentage_24h < 0 ? '#cf4f4f' : '#107210'}}
