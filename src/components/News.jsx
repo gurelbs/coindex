@@ -6,8 +6,7 @@ import './news.css'
 export default function News() {
     const [news,setNews] = useState([])
     const [isLoad,setIsLoad] = useState(true)
-    const newsapi = `e4183f2f5ed74608bc654d9def3ab4fb`
-    const url = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=${newsapi}`
+    const url = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=e4183f2f5ed74608bc654d9def3ab4fb`
     useEffect(() => {
         const fetchData =  async () => {
             setIsLoad(true)

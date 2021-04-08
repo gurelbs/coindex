@@ -56,6 +56,13 @@
   font-size: 1.5rem;
   text-transform: uppercase;
 }
+.allcoin-txt{
+  font-size: 2rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1.5vw 0;
+}
 @media only screen and (min-width: 600px){
   *{
     font-size: 20px;

@@ -42,6 +42,7 @@ export default function Cryptocurrencies() {
     }
     return (
       <div className="page">
+        <h1 className="allcoin-txt">All Cryptocurrencies</h1>
         <div ref={infinitable}  className="fluid-table">
         <table className="table">
           <Thead/>
