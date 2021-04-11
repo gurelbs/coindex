@@ -2,15 +2,15 @@
 # website: [COINDEX.CF](http://coindex.cf)
 
 ## Pseudo Code:
-- [ ] homepage - cover
-- [ ] nav
-    - [ ] logo
-    - [ ] top100
-    - [ ] all coin
-    - [ ] all Exchanges
-    - [ ] Watchlist
-    - [ ] news
-    - [ ] about
+- [v] homepage - cover
+- [v] nav
+    - [v] logo
+    - [v] top100
+    - [v] all coin
+    - [v] all Exchanges
+    - [v] Watchlist
+    - [v] news
+    - [v] about
 - [ ] mainApp
     - [ ] top100 page
         - [ ] top100 table
@@ -39,7 +39,7 @@
 > more features:
 - [ ] search box
 - [ ] table sort buttons
-- [ ] global market data
+- [v ] global market data
 
 ## uniq feature:
 - [ ] news per currency in his uniq page
