@@ -6,24 +6,27 @@ import './news.css'
 export default function News() {
     const [news,setNews] = useState([])
     const [isLoad,setIsLoad] = useState(true)
-    const url = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=e4183f2f5ed74608bc654d9def3ab4fb`
+    const url = `https://hejs.cf/api/news?q=ביטקוין`
     useEffect(() => {
         const fetchData =  async () => {
             setIsLoad(true)
             let {data} = await axios.get(url)
-            setNews(data.articles)
+            setNews(data)
             setIsLoad(false)
         }
         fetchData()
     },[])
+    useEffect(() => {
+        console.log(news);
+    },[news])
     return (
         <div  className="page">
             {isLoad ? <Spinner/> : <div className="news-wrap">
                 {news.map( (newsDetails,i) => <div className="news-card" key={i}>
                 <a href={newsDetails.url} target='_blank'>
-                    <span className="news-tagname">{newsDetails.source.name}</span>
-                    <img src={newsDetails.urlToImage} alt=""/>
-                    <h1>{newsDetails.title}</h1>
+                    <span className="news-tagname">{newsDetails.origin}</span>
+                    <code>{newsDetails.time}</code>
+                    <h1>{newsDetails.header}</h1>
                 </a>
                 </div>)}
             </div>}
