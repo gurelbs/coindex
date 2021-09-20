@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-// import NewsAPI from 'newsapi'
 import axios from 'axios'
 import Spinner from './Spinner'
 import './news.css'
